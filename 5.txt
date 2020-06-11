@@ -2,4 +2,5 @@ hello again world
 
 will be t esting git difftool with this
 
+lol
 adding 2nd line
