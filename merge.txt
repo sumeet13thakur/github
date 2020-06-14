@@ -1,2 +1,8 @@
 master
+<<<<<<< HEAD
 bugfix
+=======
+
+feature
+this is another line in feature after the bugfix branch was merged to master branch and then we returned back to feature branch
+>>>>>>> feature
