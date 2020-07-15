@@ -1,0 +1,136 @@
+sumee@DESKTOP-HJBDPVU MINGW64 ~
+$ git version
+git version 2.26.2.windows.1
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~
+$ pwd
+/c/Users/sumee
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~
+$ mkdir projects
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~
+$ cd projects
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ pwd
+/c/Users/sumee/projects
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ git version
+git version 2.26.2.windows.1
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ git config --global user.name 'xx33433'
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ git config --global user.email 'sumeet13thakur@gmail.com'
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ git config --global --list
+user.name=xx33433
+user.email=sumeet13thakur@gmail.com
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ git clone https://github.com/sumeet13thakur/github.git
+Cloning into 'github'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ ls
+github/
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects
+$ cd github
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ pwd
+/c/Users/sumee/projects/github
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ ls
+README.md
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ echo 'hello world 1' >> sample.txt
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ ls
+README.md  sample.txt
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ cat sample.txt
+hello world 1
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git add sample.txt
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git commit -m 'adding this text with commit command'
+[master bb486fa] adding this text with commit command
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ cat sample.txt
+hello world 1
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 153.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sumeet13thakur/github.git
+   ce5211c..bb486fa  master -> master
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+sumee@DESKTOP-HJBDPVU MINGW64 ~/projects/github (master)
+$
